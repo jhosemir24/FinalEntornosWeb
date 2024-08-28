@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#all {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#tiempo_glb {
+  display: flex;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tiempo2 {
+  padding: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.logo-container {
+  position: relative;
+  padding: 20px;
 }
 
-.card {
-  padding: 2em;
+#logo {
+  width: 100px; /* Tamaño inicial del logotipo */
+  transition: transform 0.3s; /* Agregamos una transición suave */
 }
 
-.read-the-docs {
-  color: #888;
+#logo:hover {
+  transform: scale(1.2); /* Escalamos el logotipo al 120% cuando el mouse está sobre él */
+}
+
+#bannerImage{
+  width: 100%;
+  height: 400px;
+}
+
+.pedir {
+  display: flex;
+  justify-content: center;
+}
+
+#pizza {
+  width: 400px;
+  height:300px;
+  padding-bottom: 20px;
+}
+
+.info {
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+.pedir h3{
+  padding-bottom: 10px;
+}
+
+.registro-glb {
+  padding: 50px;
+}
+
+.registro-glb h3{
+  color: brown;
+}
+
+.registro {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.type {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0px 10px 10px;
+}
+
+#descripcion {
+  padding-bottom: 150px;
+}
+
+button {
+  background-color: rgb(37, 189, 37);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+
+footer {
+  background-color: green;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parrafos {
+  color: white;
+  padding: 10px;
+}
+
+.social-logos {
+  display: flex;
+  gap: 20px;
+}
+
+.rotate-on-hover {
+  transition: transform 0.3s ease;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.rotate-on-hover:hover {
+  transform: rotate(360deg);
 }
