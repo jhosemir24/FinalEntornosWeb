@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import logo from '../imagenes/logo.png'
+import './Header.css'
 
 function Header() {
     return (
         <>
-            <div id='header'>
+            <div className='header'>
                 <div className="logo-container">
                     <img src={logo} alt="Mi Logotipo" id="logo" />
                 </div>
@@ -16,7 +17,8 @@ function Header() {
         </>
     );
 }
-export default Header;
+
+export default Header
 
 function agregarCero(numero) {
     return numero < 10 ? '0' + numero : numero;
@@ -39,4 +41,4 @@ function actualizarTiempo() {
 }
 
 setInterval(actualizarTiempo, 1000);
-actualizarTiempo();
+actualizarTiempo(); // Llamar inmediatamente para mostrar el tiempo sin esperar 1 segundo
