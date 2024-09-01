@@ -1,4 +1,4 @@
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
 import '../componentes/Contactos.css'
 import citas from '../image/contac_citas-virtuales.png'
 import contact from '../image/contac_contact-center.png'
@@ -9,6 +9,7 @@ import whatsapp from '../image/contac_whatsapp.png'
 
 function Contactos() {
 
+    //Giro
     const images = document.querySelectorAll('.giro-leve');
 
     images.forEach((image) => {
@@ -17,18 +18,21 @@ function Contactos() {
         });
     });
 
+    //Zoom
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <>
             <div id="contacto-glb">
                 <div>
                     <div className="contacto-select">
                         <div>
-                            <img  
-                            className="giro-leve"
-                            src={tienda}
-                            alt="" />
+                            <img
+                                className="giro-leve"
+                                src={tienda}
+                                alt="" />
                         </div>
-                        <div className="contac-info-2">
+                        <div className="zooming-text">
                             <h2>Tiendas</h2>
                             <h3>Asesoria presencial para tus vacaciones</h3>
                         </div>
@@ -38,12 +42,12 @@ function Contactos() {
                     </div>
                     <div className="contacto-select">
                         <div>
-                            <img  
-                            className="giro-leve"
-                            src={web} 
-                            alt="" />
+                            <img
+                                className="giro-leve"
+                                src={web}
+                                alt="" />
                         </div>
-                        <div className="contac-info-2">
+                        <div className="zooming-text">
                             <h2>Web</h2>
                             <h3>Reserva, cotiza y compra tu proximo viaje</h3>
                         </div>
@@ -55,12 +59,12 @@ function Contactos() {
                 <div>
                     <div className="contacto-select">
                         <div>
-                            <img  
-                            className="giro-leve"
-                            src={whatsapp}
-                            alt="" />
+                            <img
+                                className="giro-leve"
+                                src={whatsapp}
+                                alt="" />
                         </div>
-                        <div className="contac-info-2">
+                        <div className="zooming-text">
                             <h2>WhatsApp</h2>
                             <h3>Cotiza, compra y planifica todo desde tu celular</h3>
                         </div>
@@ -70,12 +74,12 @@ function Contactos() {
                     </div>
                     <div className="contacto-select">
                         <div>
-                            <img 
-                            className="giro-leve"
-                            src={contact} 
-                            alt="" />
+                            <img
+                                className="giro-leve"
+                                src={contact}
+                                alt="" />
                         </div>
-                        <div className="contac-info-2">
+                        <div className="zooming-text">
                             <h2>Contac Center</h2>
                             <h3>Llámanos, resulve tus dudas y planifica tu viaje con nosotros</h3>
                         </div>
@@ -87,12 +91,12 @@ function Contactos() {
                 <div>
                     <div className="contacto-select">
                         <div>
-                            <img 
-                            className="giro-leve"
-                            src={citas}
-                            alt="" />
+                            <img
+                                className="giro-leve"
+                                src={citas}
+                                alt="" />
                         </div>
-                        <div className="contac-info-2">
+                        <div className="zooming-text">
                             <h2>Citas Virtuales</h2>
                             <h3>Te asesoramos para planificar tus próximas vacaciones</h3>
                         </div>
@@ -102,12 +106,12 @@ function Contactos() {
                     </div>
                     <div className="contacto-select">
                         <div>
-                            <img 
-                            className="giro-leve"
-                            src={portal}
-                            alt="" />
+                            <img
+                                className="giro-leve"
+                                src={portal}
+                                alt="" />
                         </div>
-                        <div className="contac-info-2">
+                        <div className="zooming-text">
                             <h2>Portal de ayuda</h2>
                             <h3>Solicita cambios, reembolsos o seguimiento de tu caso</h3>
                         </div>

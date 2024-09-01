@@ -1,9 +1,9 @@
-#contacto-glb{
+#contacto-glb {
     justify-content: center;
     display: flex;
 }
 
-.contacto-select{
+.contacto-select {
     background-color: white;
     width: 70%;
     height: 30%;
@@ -24,7 +24,7 @@
     border: 100px;
     text-decoration: none;
 }
-  
+
 .contacto-select a:hover {
     text-decoration: underline;
 }
@@ -39,4 +39,13 @@
 
 .giro-leve:hover {
     transform: rotate(360deg);
+}
+
+.zooming-text {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.zooming-text:hover {
+    transform: scale(1.2);
 }
